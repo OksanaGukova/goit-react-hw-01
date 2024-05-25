@@ -1,34 +1,33 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Profile.module.css'
+import css from './Profile.module.css'
 
 
 
 export const Profile = ({ name, tag, location, image, stats }) => {
     return (
-        <div>
-  <div>
+        <div className={css.container}>
+  <div className={css.profile}>
     <img
       src={image}
-      alt="User avatar"
+      alt="User avatar" width="150"
     />
-    <p>{name}</p>
-    <p>@{tag}</p>        
-    <p>{location}</p>
+    <p className={css.name}>{name}</p>
+    <p className={css.tag}>@{tag}</p>        
+    <p className={css.location}>{location}</p>
   </div>
 
   <ul>
     <li>
-      <span>Followers</span>
-      <span>{stats.followers}</span>
+      <span className={css.label}>Followers</span>
+      <span className={css.quantity}>{stats.followers}</span>
     </li>
     <li>
-      <span>Views</span>
-      <span>{stats.vievs}</span>
+      <span className={css.label}>Views</span>
+      <span className={css.quantity}>{stats.views}</span>
     </li>
     <li>
-      <span>Likes</span>
-      <span>{stats.likes}</span>
+      <span className={css.label}>Likes</span>
+      <span className={css.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>
