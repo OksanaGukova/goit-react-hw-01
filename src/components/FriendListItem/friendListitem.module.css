@@ -19,7 +19,7 @@ border-radius: 0%;
         font-weight: 500;
 font-size: 32px;
 margin-top: 20px;
-margin-bottom: 8px;
+margin-bottom: 8nppx;
 }
 
 .isOnline{
@@ -35,5 +35,9 @@ font-size: 20px;
 }
 
 .stats {
+    margin: 0;
+}
+
+p {
     margin: 0;
 }
