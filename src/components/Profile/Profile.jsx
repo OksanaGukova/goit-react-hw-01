@@ -36,3 +36,4 @@ export const Profile = ({ name, tag, location, image, stats }) => {
 }
 
 
+export default Profile;

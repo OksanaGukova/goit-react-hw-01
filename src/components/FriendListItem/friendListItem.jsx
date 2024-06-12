@@ -1,5 +1,6 @@
 import css from './friendListitem.module.css'
 import clsx from "clsx";
+
 export const FriendListItem = ({ avatar, name, isOnline }) => {
      const classNames = clsx(css.ontine, isOnline ? css.isOnline : css.offline);
     return (
